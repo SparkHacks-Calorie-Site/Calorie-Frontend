@@ -1,9 +1,61 @@
 <script>
+import axios from "axios";
 export default {
 	name: "CaloriesView",
+	methods: {
+		populateFoodData(values) {
+			this.calorie_goal = values.calories
+			this.formData.food1 = values.food1;
+			this.formData.food2 = values.food2;
+			this.formData.food3 = values.food3;
+		},
+		getInfo() {
+			fetch("http://127.0.0.1:8000/calories/",
+				{
+					method: "POST",
+					body: JSON.stringify(this.formData),
+					headers:
+					{
+						"Content-Type": "application/json"
+					}
+
+				}).then(response => {
+					response.json().then(res => this.total_calories = res);
+				})
+				.catch((error) => console.log(error));
+
+			fetch("http://127.0.0.1:8000/macros/",
+				{
+					method: "POST",
+					body: JSON.stringify(this.formData),
+					headers:
+					{
+						"Content-Type": "application/json"
+					}
+
+				}).then(response => {
+					response.json().then(res => {
+						this.total_protein = res.Protein
+						this.total_carbs = res.Carbs
+						this.total_fats = res.Fat
+					}
+					);
+				})
+				.catch((error) => console.log(error));
+		}
+	},
 	data() {
 		return {
-			message: ''
+			total_protein: 0,
+			total_carbs: 0,
+			total_fats: 0,
+			total_calories: 0,
+			calorie_goal: 0,
+			formData: {
+				food1: "",
+				food2: "",
+				food3: "",
+			},
 		}
 	}
 }
@@ -11,50 +63,60 @@ export default {
 
 <template>
 	<div class="content">
-		<div class="calorie-input">
-			<h2>Enter Calorie Goal</h2>
-			<input v-model="message" placeholder="Ex. 1500" />
-		</div>
-
-		<section class="info-col food-list">
-			<div class="food-item">
-				<h2>Breakfast</h2>
-				<input v-model="breakfast" placeholder="Ex. 1500" />
-
-				<div class="macro-list">
-					<h3>Protein: </h3>
-					<h3>Carbs: </h3>
-					<h3>Fats: </h3>
+		<form @submit.prevent="getInfo()">
+			<div class="calorie-input">
+				<h2>Enter Calorie Goal</h2>
+				<div>
+					<input type="text" id="calories" v-model="formData.calories" placeholder="Ex. 1500"
+						class="calorie-input" />
 				</div>
-
-				<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
 			</div>
-			<div class="food-item">
-				<h2>Lunch</h2>
-				<input v-model="lunch" placeholder="Ex. 1500" />
 
-				<div class="macro-list">
-					<h3>Protein: </h3>
-					<h3>Carbs: </h3>
-					<h3>Fats: </h3>
+			<section class="info-col food-list">
+				<div class="food-item">
+					<h2>Breakfast</h2>
+					<input type="text" id="food1" v-model="formData.food1" placeholder="Ex. Pancakes" />
+
+
+					<div class="macro-list">
+						<h3>Protein: </h3>
+						<h3>Carbs: </h3>
+						<h3>Fats: </h3>
+					</div>
+
+					<!--<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">-->
 				</div>
+				<div class="food-item">
+					<h2>Lunch</h2>
+					<input type="text" id="food2" v-model="formData.food2" placeholder="Ex. Hamburger" />
 
-				<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
-			</div>
-			<div class="food-item">
-				<h2>Dinner</h2>
-				<input v-model="dinner" placeholder="Ex. 1500" />
+					<div class="macro-list">
+						<h3>Protein: </h3>
+						<h3>Carbs: </h3>
+						<h3>Fats: </h3>
+					</div>
 
-				<div class="macro-list">
-					<h3>Protein: </h3>
-					<h3>Carbs: </h3>
-					<h3>Fats: </h3>
+					<!--<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">-->
 				</div>
+				<div class="food-item">
+					<h2>Dinner</h2>
+					<input type="text" id="food3" v-model="formData.food3" placeholder="Ex. Ramen" />
 
-				<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
+					<div class="macro-list">
+						<h3>Protein: </h3>
+						<h3>Carbs: </h3>
+						<h3>Fats: </h3>
+					</div>
+
+					<!--<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">-->
+				</div>
+			</section>
+			<div class="submit-calories CTA-button">
+				<button v-on:click="populateFoodData(formData)">Create Request</button>
 			</div>
-		</section>
+		</form>
 
+		<h2 v-show="calorie_goal != 0" class="calorie-goal">{{ total_calories }} kCal out of {{ calorie_goal }} kCal</h2>
 		<div class="wrapper">
 			<div class="progress-bar">
 				<span class="progress-bar-fill" style="width: 50%;"></span>
@@ -62,7 +124,7 @@ export default {
 		</div>
 
 		<div class="calorie-output">
-			<h2>You're reached X% of your goal.</h2>
+			<h2>You're reached {{ Math.round(total_calories / calorie_goal * 100) }}% of your goal.</h2>
 		</div>
 
 		<section class="info-col">
@@ -71,9 +133,9 @@ export default {
 			</div>
 			<div class="macro-stats">
 				<div class="macro-list">
-					<h3>Protein: </h3>
-					<h3>Carbs: </h3>
-					<h3>Fats: </h3>
+					<h3>Protein: {{ total_protein }}</h3>
+					<h3>Carbs: {{  total_carbs }}</h3>
+					<h3>Fats: {{ total_fats }}</h3>
 				</div>
 				<h3>Add some more supurfluous bullshit over here. Wow I love typing man typing is so cool Wow</h3>
 			</div>
@@ -83,20 +145,35 @@ export default {
 </template>
 
 <style>
+/* /////////////////////////////////////////////////////////////// */
+/* Form Bullshit */
+s .submit-calories {
+	text-align: center;
+}
+
+.submit-calories .CTA-button {
+	text-align: center;
+	max-width: 60%;
+}
+
 
 /* /////////////////////////////////////////////////////////////// */
-/* Calore Input */
+/* Calorie Input */
+
+.calorie-goal {
+	text-align: center;
+}
 
 .calorie-input {
 	text-align: center;
-	margin-top: 56px;	
+	font-size: 20px;
 	/*border: 1px solid black;*/
 }
 
 /* /////////////////////////////////////////////////////////////// */
 /* Food Item List */
 
-.food-list{
+.food-list {
 	margin-top: 56px;
 	margin-bottom: 56px;
 }
@@ -148,10 +225,10 @@ export default {
 	text-align: center;
 }
 
-.calorie-graph img{
+.calorie-graph img {
 	height: 300px;
 	margin: auto;
-}	
+}
 
 .macro-stats {
 	text-align: left;

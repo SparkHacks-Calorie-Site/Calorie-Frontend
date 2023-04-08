@@ -1,9 +1,25 @@
 <script>
 export default {
 	name: "ExerciseView",
+	methods: {
+		fetchData(muscle) {
+			this.show = true;
+			fetch(`http://127.0.0.1:8000/${muscle}`, {
+				method: 'GET'
+			})
+				.then(response => {
+					response.json().then(res => this.msg = res);
+				})
+				.catch(err => {
+					console.error(err);
+				});
+		}
+	},
 	data() {
 		return {
-			message: ''
+			message: '',
+			msg: [],
+			show: false
 		}
 	}
 }
@@ -11,64 +27,77 @@ export default {
 
 <template>
 	<div class="content">
-		<h2 class="header">Select a muscle group you'd like to workout.</h2>
+		<h2 class="header">Select a muscle group you'd like to
+			workout.</h2>
 		<section class="info-col">
 			<div class="exercise-item">
-				<h2>Hamstring</h2>
-				<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
+				<button @click="fetchData('chest')">
+					<h2>Chest</h2>
+					<img src="../assets/chest.png">
+				</button>
 			</div>
 			<div class="exercise-item">
-				<h2>Hamstring</h2>
-				<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
+				<button @click="fetchData('upper-back')">
+					<h2>Back</h2>
+					<img src="../assets/Back.png">
+				</button>
 			</div>
 			<div class="exercise-item">
-				<h2>Hamstring</h2>
-				<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
+				<button @click="fetchData('glutes')">
+					<h2>Glutes</h2>
+					<img src="../assets/Glutes.png">
+				</button>
 			</div>
 		</section>
 		<section class="info-col">
 			<div class="exercise-item">
-				<h2>Hamstring</h2>
-				<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
+				<button @click="fetchData('arms')">
+					<h2>Arms</h2>
+					<img src="../assets/Arms.jpeg">
+				</button>
 			</div>
 			<div class="exercise-item">
-				<h2>Hamstring</h2>
-				<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
+				<button @click="fetchData('quads')">
+					<h2>Quads</h2>
+					<img src="../assets/Quads.png">
+				</button>
 			</div>
 			<div class="exercise-item">
-				<h2>Hamstring</h2>
-				<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
-			</div>
-		</section>
+				<button @click="fetchData('hamstrings')">
+					<h2>Hamstring</h2>
+					<img src="../assets/Hamstrings.png">
+			</button>
+		</div>
+	</section>
 
-		<section>
+		<section v-show="show" class ="exercises">
 			<div class="info-col">
 				<div class="exercise-item">
-					<h2>Exercise #1</h2>
-					<p>Steps: [Insert some steps here]</p>
+					<h2>{{ msg["Exercise 1 Name"] }}</h2>
+					<p>{{ msg["Steps 1"] }}</p>
 				</div>
 				<div class="exercise-item">
-					<iframe width="470" height="265" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+					<iframe width="470" height="265" :src="msg['YouTube 1']">
 					</iframe>
 				</div>
 			</div>
 			<div class="info-col">
 				<div class="exercise-item">
-					<h2>Exercise #1</h2>
-					<p>Steps: [Insert some steps here]</p>
+					<h2>{{ msg["Exercise 2 Name"]}}</h2>
+					<p>{{ msg["Steps 2"] }}</p>
 				</div>
 				<div class="exercise-item">
-					<iframe width="470" height="265" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+					<iframe width="470" height="265" :src="msg['YouTube 2']">
 					</iframe>
 				</div>
 			</div>
 			<div class="info-col">
 				<div class="exercise-item">
-					<h2>Exercise #1</h2>
-					<p>Steps: [Insert some steps here]</p>
+					<h2>{{ msg["Exercise 3 Name"] }}</h2>
+					<p>{{ msg["Steps 3"] }}</p>
 				</div>
 				<div class="exercise-item">
-					<iframe width="470" height="265" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+					<iframe width="470" height="265" :src="msg['YouTube 3']">
 					</iframe>
 				</div>
 			</div>
@@ -81,17 +110,25 @@ export default {
 	text-align: center;
 }
 
+.exercise-item button {
+	padding: 0 40px 15px 40px;
+}
+
 .exercise-item img {
 	height: 100px;
 	padding: auto;
 }
 
-.exercise-item:hover {
-	height: 105%;
+s .exercise-item h2:hover {
+	background-color: red;
 }
 
-.header{
+.header {
 	text-align: center;
+}
+
+.exercises {
+	margin-top: 56px;
 }
 </style>
 
