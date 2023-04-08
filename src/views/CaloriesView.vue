@@ -16,7 +16,7 @@ export default {
 			<input v-model="message" placeholder="Ex. 1500" />
 		</div>
 
-		<section class="info-col">
+		<section class="info-col food-list">
 			<div class="food-item">
 				<h2>Breakfast</h2>
 				<input v-model="breakfast" placeholder="Ex. 1500" />
@@ -89,15 +89,21 @@ export default {
 
 .calorie-input {
 	text-align: center;
-	border: 1px solid black;
+	margin-top: 56px;	
+	/*border: 1px solid black;*/
 }
 
 /* /////////////////////////////////////////////////////////////// */
 /* Food Item List */
 
+.food-list{
+	margin-top: 56px;
+	margin-bottom: 56px;
+}
+
 .food-item {
 	text-align: center;
-	border: black 1px solid;
+	/*border: black 1px solid;*/
 }
 
 .food-item img {
@@ -114,6 +120,7 @@ export default {
 /* Progress Bar */
 
 .progress-bar {
+	margin-top: 32px;
 	width: 100%;
 	background-color: #e0e0e0;
 	padding: 3px;
@@ -135,22 +142,19 @@ export default {
 
 .calorie-output {
 	text-align: center;
-	border: 1px solid black;
 }
 
 .calorie-graph {
-	border: 1px solid black;	
+	text-align: center;
 }
-
 
 .calorie-graph img{
 	height: 300px;
-	
-}
+	margin: auto;
+}	
 
 .macro-stats {
 	text-align: left;
-	border: 1px solid black;
 }
 </style>
 
