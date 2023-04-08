@@ -7,7 +7,6 @@
 		</router-link>
 		<router-link to="/exercise">Exercise</router-link>
 		<router-link to="/about">About</router-link>
-		
 	</nav>
 </template>
   
