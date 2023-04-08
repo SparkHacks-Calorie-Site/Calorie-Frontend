@@ -1,35 +1,165 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
-#app {
-  max-width: 1280px;
+/* /////////////////////////////////////////////////////////////// */
+/* GENERAL */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h2,
+p {
+  color: #444444;
+}
+
+body {
+  margin: 0% auto;
+  background: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+/*  CTA-Button */
+.CTA-button {
+  text-align: center;
+}
+
+.CTA-button button {
+  border: 0px;
+  background-color: transparent;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.CTA-button .Inventory {
+  background-color: #d50032;
+  color: white;
+  margin-right: 13.333px;
+}
+
+.CTA-button .Inventory:hover {
+  background-color: #a20026;
+}
+
+.CTA-button .Inventory:active {
+  transform: scale(0.95);
+}
+
+.CTA-button .FAQ {
+  color: white;
+  border: 1px white solid;
+}
+
+.CTA-button .FAQ:hover {
+  color: black;
+  background-color: white;
+}
+
+.CTA-button .FAQ:active {
+  transform: scale(0.95);
+}
+
+.content .CTA-button {
+  background-color: gray;
+  padding: 10px;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+/* MOBILE BREAKPOINTS */
+.content {
+  max-width: 70%;
   margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+@media only screen and (max-width: 720px) {
+  .content {
+    max-width: 95%;
   }
 }
 
-@media (min-width: 1024px) {
-  body {
+@media only screen and (min-width: 1080px) {
+  .content {
+    max-width: 60%;
+  }
+}
+
+/* /////////////////////////////////////////////////////////////// */
+/* Info Colums */
+
+@media (min-width: 1080px) {
+  .info-col {
     display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
   }
 }
+
+.info-col div {
+  width: 100%;
+  padding: 10px;
+  /*border: 1px solid black;*/
+}
+
+/* /////////////////////////////////////////////////////////////// */
+/* Random Information */
+
+.information-left {
+  /*background-color: red;*/
+  padding-top: 56px;
+  padding-right: 32px;
+  padding-bottom: 56px;
+  padding-left: 32px;
+}
+
+.information-left h2 {
+  font-size: 30px;
+}
+
+.information-left p {
+  font-size: 16px;
+}
+
+.information-right {
+  /*background-color: red;*/
+  text-align: right;
+  padding-top: 56px;
+  padding-right: 32px;
+  padding-bottom: 56px;
+  padding-left: 32px;
+}
+
+.information-right h2 {
+  font-size: 30px;
+}
+
+.information-right p {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 720px) {
+  .information-left {
+    max-width: 95%;
+  }
+
+  .information-right {
+    max-width: 95%;
+	margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .information-left {
+    max-width: 60%;
+  }
+  
+  .information-right {
+    max-width: 60%;
+	margin-left: auto;
+  }
+}
+
