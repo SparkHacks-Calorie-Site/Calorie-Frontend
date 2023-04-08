@@ -1,11 +1,11 @@
 <template>
 	<nav class="content">
 		<router-link to="/home">Blog</router-link>
-		<router-link to="/inventory">Calories</router-link>
+		<router-link to="/calories">Calories</router-link>
 		<router-link to="/" class="logo-container">
 			<img src="../assets/logo.png" class="logo" />
 		</router-link>
-		<router-link to="/contact">Exercise</router-link>
+		<router-link to="/exercise">Exercise</router-link>
 		<router-link to="/about">About</router-link>
 		
 	</nav>
