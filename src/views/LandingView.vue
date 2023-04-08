@@ -1,7 +1,7 @@
 <template>
   <div class="hero-image">
     <div class="hero-CTA">
-      <h1>Healthy living, made easy.</h1>
+      <h1>Healthy, made easy.</h1>
       <h2>Because student life is already stressful.</h2>
       <div class="CTA-button">
         <button @click="$router.push('calories')" class="Inventory" to="/calories">

@@ -78,11 +78,11 @@ export default {
 					<input type="text" id="food1" v-model="formData.food1" placeholder="Ex. Pancakes" />
 
 
-					<div class="macro-list">
+					<!--<div class="macro-list">
 						<h3>Protein: </h3>
 						<h3>Carbs: </h3>
 						<h3>Fats: </h3>
-					</div>
+					</div>-->
 
 					<!--<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">-->
 				</div>
@@ -90,11 +90,11 @@ export default {
 					<h2>Lunch</h2>
 					<input type="text" id="food2" v-model="formData.food2" placeholder="Ex. Hamburger" />
 
-					<div class="macro-list">
+					<!--<div class="macro-list">
 						<h3>Protein: </h3>
 						<h3>Carbs: </h3>
 						<h3>Fats: </h3>
-					</div>
+					</div>-->
 
 					<!--<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">-->
 				</div>
@@ -102,11 +102,11 @@ export default {
 					<h2>Dinner</h2>
 					<input type="text" id="food3" v-model="formData.food3" placeholder="Ex. Ramen" />
 
-					<div class="macro-list">
+					<!--<div class="macro-list">
 						<h3>Protein: </h3>
 						<h3>Carbs: </h3>
 						<h3>Fats: </h3>
-					</div>
+					</div>-->
 
 					<!--<img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">-->
 				</div>
@@ -117,11 +117,11 @@ export default {
 		</form>
 
 		<h2 v-show="calorie_goal != 0" class="calorie-goal">{{ total_calories }} kCal out of {{ calorie_goal }} kCal</h2>
-		<div class="wrapper">
+		<!--<div class="wrapper">
 			<div class="progress-bar">
 				<span class="progress-bar-fill" style="width: 50%;"></span>
 			</div>
-		</div>
+		</div>-->
 
 		<div class="calorie-output">
 			<h2>You're reached {{ Math.round(total_calories / calorie_goal * 100) }}% of your goal.</h2>
@@ -137,7 +137,6 @@ export default {
 					<h3>Carbs: {{  total_carbs }}</h3>
 					<h3>Fats: {{ total_fats }}</h3>
 				</div>
-				<h3>Add some more supurfluous bullshit over here. Wow I love typing man typing is so cool Wow</h3>
 			</div>
 		</section>
 
@@ -185,6 +184,10 @@ s .submit-calories {
 
 .food-item img {
 	height: 100px;
+}
+
+.food-item input {
+	font-size: 20px;
 }
 
 .macro-list {
