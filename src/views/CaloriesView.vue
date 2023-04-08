@@ -42,10 +42,29 @@ export default {
 					);
 				})
 				.catch((error) => console.log(error));
+
+				fetch("http://127.0.0.1:8000/picture/",
+				{
+					method: "POST",
+					body: JSON.stringify(this.formData),
+					headers:
+					{
+						"Content-Type": "application/json"
+					}
+
+				}).then(response => {
+					response.json().then(res => {
+						this.base64_decode = res.images
+						console.log(this.base64_decode)
+					}
+					);
+				})
+				.catch((error) => console.log(error));
 		}
 	},
 	data() {
 		return {
+			base64_decode: "",
 			total_protein: 0,
 			total_carbs: 0,
 			total_fats: 0,
@@ -129,7 +148,7 @@ export default {
 
 		<section class="info-col">
 			<div class="calorie-graph">
-				<img src="https://www.tibco.com/sites/tibco/files/media_entity/2022-01/PieChart-01.svg">
+				<img :src="`data:image/png;base64,${base64_decode}`" />
 			</div>
 			<div class="macro-stats">
 				<div class="macro-list">
