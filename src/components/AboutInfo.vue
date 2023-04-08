@@ -3,13 +3,7 @@
 		<section class="information-left">
 			<h2>Our Mission Statement:</h2>
 			<p>
-				UIC is the industry leader of one-to-one niches. The all-hands meetings
-				factor is plug-and-play. We think we know that if you evolve virally
-				then you may also synergize efficiently. Your budget for syndicating
-				should be at least one-tenth of your budget for iterating. We understand
-				that it is better to orchestrate seamlessly than to embrace globally.
-				Your budget for upgrading should be at least three times your budget for
-				syndicating.
+				Our mission is to empower users to make informed decisions about their nutrition and health by providing an easy-to-use and accurate tool for tracking their daily caloric intake. We strive to create a community of health-conscious individuals who can support and motivate each other to reach their goals and achieve long-term success in maintaining a healthy lifestyle. Our mission is to inspire and support healthy habits, one step at a time.
 			</p>
 		</section>
 	</div>
@@ -25,7 +19,7 @@
 
 			<section class="info-col">
 				<div class="item-1 notes">
-					<h2>This is a thing</h2>
+					<h2>hi!!</h2>
 					<p>
 						UIC is the industry leader of best-of-breed architectures. What do we
 						visualize? Anything and everything, regardless of standing! Think
