@@ -19,30 +19,22 @@
 
 			<section class="info-col">
 				<div class="item-1 notes">
-					<h2>hi!!</h2>
+					<h2>Our Goal</h2>
 					<p>
-						UIC is the industry leader of best-of-breed architectures. What do we
-						visualize? Anything and everything, regardless of standing! Think
-						best-of-breed. Our technology takes the best aspects of DOM and C++.
-						What does the term "customized" really mean?
+						We strive to provide the most accurate and reliable information about nutrition and exercise, so that our users can make informed decisions about their lifestyle choices. Our platform is designed to be intuitive and user-friendly, making it easy for anyone to track their calories and get personalized workout recommendations. Whether you're a beginner or a fitness enthusiast, we're committed to helping you achieve your goals and live your best life.
 					</p>
 				</div>
 				<div class="item-2 notes">
-					<h2>This is another thing</h2>
+					<h2>Calorie Tracking</h2>
 					<p>
-						The metrics for TQC are more well-understood if they are not virtual.
-						We have proven we know that if you grow proactively then you may also
-						orchestrate seamlessly. If all of this seems unclear to you, that's
-						because it is!
+						The calorie tracking feature on our website allows users to monitor their daily caloric intake and stay on track towards their fitness goals. The feature is broken down into three sections for breakfast, lunch, and dinner, with an additional section for snacks. Users can easily enter the foods they eat throughout the day and we will calculate the calorie content for you. The feature also allows users to enter their daily goal for calories, making it easier to monitor their progress towards reaching their fitness goals. With this tool, users can make informed decisions about their eating habits and ensure they are staying within their caloric needs.
+
 					</p>
 				</div>
 				<div class="item-3 notes">
-					<h2>This is yet another thing</h2>
+					<h2>Exercise Recommendations</h2>
 					<p>
-						Without intra-process management, you will lack media sourcing. We
-						apply the proverb "Beggars can't be choosers" not only to our
-						obfuscation but our power to repurpose. Quick: do you have a
-						customized scheme for handling new user interfaces?
+						The exercise feature on our website allows users to pick individual muscle group's and provides various exercises focused on the selected group. The feature provides a description of the workout and a YouTube video as an example. This allows users to stay on track towards their fitness goals. Pick a muscle group  muscle group and we will do the rest for you.
 					</p>
 				</div>
 			</section>
@@ -52,7 +44,7 @@
 
 	<div class="content">
 
-
+<!-- 
 
 		<section class="information-right">
 			<h2>Some more Writing:</h2>
@@ -68,7 +60,7 @@
 				holistic. Think reality-based. Think out-of-the-box. But don't think all
 				three at the same time.
 			</p>
-		</section>
+		</section> -->
 
 
 	</div>
@@ -78,33 +70,33 @@
 
 			<section class="info-col">
 				<div class="item-1 pfp">
-					<img src="../assets/pfp.jpg" />
-					<h2>Abdullah</h2>
-					<p>Some writing someone will definitely read</p>
+					<img src="../assets/abdullah.jpg" />
+					<h2>Abdullah Ali</h2>
+					<!-- <p>Some writing someone will definitely read</p> -->
 				</div>
 				<div class="item-2 pfp">
-					<img src="../assets/pfp.jpg" />
-					<h2>Angad</h2>
-					<p>Some writing someone will definitely read</p>
+					<img src="../assets/angad.jpg" />
+					<h2>Angad Gakhal</h2>
+					<!-- <p>Some writing someone will definitely read</p> -->
 				</div>
 				<div class="item-3 pfp">
-					<img src="../assets/pfp.jpg" />
-					<h2>Kevin</h2>
-					<p>Some writing someone will definitely read</p>
+					<img src="../assets/kevin.jpg" />
+					<h2>Kevin Cordero</h2>
+					<!-- <p>Some writing someone will definitely read</p> -->
 				</div>
 			</section>
 		</div>
 		<div class="content">
 			<section class="info-col">
 				<div class="item-1 pfp">
-					<img src="../assets/pfp.jpg" />
-					<h2>Sarvani</h2>
-					<p>Some writing someone will definitely read</p>
+					<img src="../assets/salmas.jpg" />
+					<h2>Salma Mohamed</h2>
+					<!-- <p>Some writing someone will definitely read</p> -->
 				</div>
 				<div class="item-2 pfp">
-					<img src="../assets/pfp.jpg" />
-					<h2>Salma</h2>
-					<p>Some writing someone will definitely read</p>
+					<img src="../assets/sarv.jpg" />
+					<h2>Sarvani Kunapareddy</h2>
+					<!-- <p>Some writing someone will definitely read</p> -->
 				</div>
 			</section>
 		</div>
