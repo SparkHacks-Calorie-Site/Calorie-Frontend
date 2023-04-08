@@ -2,138 +2,54 @@
 	<div class="content">
 	  <div class="feed">
 		<div class="info">
-		  <h1>This is a really cool homepage</h1>
+		  <h1>Student Testimonials</h1>
 		  <div class="article">
-			<h2>Very compelling article</h2>
+			<h2>Samir Khan</h2>
+      <h3>Electrical Engineering, 1st-Year</h3>
 			<p>
-			  UIC has permanently altered the conceptualization of enterprise,
-			  collaborative accounting reports. The metrics for biometrics are
-			  more well-understood if they are not met. We apply the proverb "A
-			  rolling stone gathers no moss" not only to our development but our
-			  capability to expedite. We will exploit the ability of eyeballs to
-			  visualize. We understand that if you deliver virally then you may
-			  also reintermediate macro-intuitively. We will e	volve the power of
-			  partnerships to engineer. What does it really mean to optimize
-			  "proactively"? Do you have a game plan to become one-to-one? Without
-			  best-of-breed C2C, you will lack compliance. What do we reinvent?
-			  Anything and everything, regardless of anonymity! Do you have a
-			  scheme to become compelling? What do we synergize? Anything and
-			  everything, regardless of abstruseness! Without e-services, you will
-			  lack web-readiness.
+			  I've been powerlifting for over 10 years now and have competed in numerous local meets. I fell in love with the sport while in college and have been hooked ever since. I've spent countless hours perfecting my technique and building up my strength, and my best lift to date is a 400-pound squat. I love the sense of camaraderie among powerlifters and the feeling of pushing myself to new heights.
 			</p>
 		  </div>
 		  <div class="article">
-			<h2>Very compelling article</h2>
+			<h2>Jayla Genisis</h2>
+      <h3>Nursing, 3rd-Year</h3>
 			<p>
-			  UIC has permanently altered the conceptualization of enterprise,
-			  collaborative accounting reports. The metrics for biometrics are
-			  more well-understood if they are not met. We apply the proverb "A
-			  rolling stone gathers no moss" not only to our development but our
-			  capability to expedite. We will exploit the ability of eyeballs to
-			  visualize. We understand that if you deliver virally then you may
-			  also reintermediate macro-intuitively. We will evolve the power of
-			  partnerships to engineer. What does it really mean to optimize
-			  "proactively"? Do you have a game plan to become one-to-one? Without
-			  best-of-breed C2C, you will lack compliance. What do we reinvent?
-			  Anything and everything, regardless of anonymity! Do you have a
-			  scheme to become compelling? What do we synergize? Anything and
-			  everything, regardless of abstruseness! Without e-services, you will
-			  lack web-readiness.
+        After a serious injury, I turned to weightlifting to rebuild my strength and regain my confidence. Through hard work and the support of a strong community, I was able to overcome my injury and become stronger than ever before. Weightlifting not only helped me recover physically, but it also gave me a sense of purpose and drive that carried over into other areas of my life.
 			</p>
 		  </div>
 		  <div class="article">
-			<h2>Very compelling article</h2>
+			<h2>Yara Alhasimi</h2>
+      <h3>Biology, 2nd-Year</h3>
 			<p>
-			  UIC has permanently altered the conceptualization of enterprise,
-			  collaborative accounting reports. The metrics for biometrics are
-			  more well-understood if they are not met. We apply the proverb "A
-			  rolling stone gathers no moss" not only to our development but our
-			  capability to expedite. We will exploit the ability of eyeballs to
-			  visualize. We understand that if you deliver virally then you may
-			  also reintermediate macro-intuitively. We will evolve the power of
-			  partnerships to engineer. What does it really mean to optimize
-			  "proactively"? Do you have a game plan to become one-to-one? Without
-			  best-of-breed C2C, you will lack compliance. What do we reinvent?
-			  Anything and everything, regardless of anonymity! Do you have a
-			  scheme to become compelling? What do we synergize? Anything and
-			  everything, regardless of abstruseness! Without e-services, you will
-			  lack web-readiness.
+        At first, weightlifting was intimidating. But with the encouragement of friends, I started lifting regularly and noticed a significant change in my body. Weightlifting also helped me to improve my mental health and become more confident in myself. Now, it's a regular part of my routine and has helped me become a better, stronger, and more confident version of myself.
 			</p>
 		  </div>
 		  <div class="article">
-			<h2>Very compelling article</h2>
+			<h2>Mark Davis</h2>
+      <h3>Business, 3rd-Year</h3>
 			<p>
-			  UIC has permanently altered the conceptualization of enterprise,
-			  collaborative accounting reports. The metrics for biometrics are
-			  more well-understood if they are not met. We apply the proverb "A
-			  rolling stone gathers no moss" not only to our development but our
-			  capability to expedite. We will exploit the ability of eyeballs to
-			  visualize. We understand that if you deliver virally then you may
-			  also reintermediate macro-intuitively. We will evolve the power of
-			  partnerships to engineer. What does it really mean to optimize
-			  "proactively"? Do you have a game plan to become one-to-one? Without
-			  best-of-breed C2C, you will lack compliance. What do we reinvent?
-			  Anything and everything, regardless of anonymity! Do you have a
-			  scheme to become compelling? What do we synergize? Anything and
-			  everything, regardless of abstruseness! Without e-services, you will
-			  lack web-readiness.
+			  I've always been into fitness, but I only started powerlifting a few months ago. I was looking for a new challenge and thought powerlifting would be a great way to test my limits. I'm still working on building up my strength and perfecting my technique, but my best lift so far is a 185-pound deadlift. I love the feeling of pushing myself to new heights and can't wait to see where this sport takes me.
 			</p>
 		  </div>
 		  <div class="article">
-			<h2>Very compelling article</h2>
+			<h2>Priya Patel</h2>
+      <h3>Biomedical Engineering, 4th-Year</h3>
 			<p>
-			  UIC has permanently altered the conceptualization of enterprise,
-			  collaborative accounting reports. The metrics for biometrics are
-			  more well-understood if they are not met. We apply the proverb "A
-			  rolling stone gathers no moss" not only to our development but our
-			  capability to expedite. We will exploit the ability of eyeballs to
-			  visualize. We understand that if you deliver virally then you may
-			  also reintermediate macro-intuitively. We will evolve the power of
-			  partnerships to engineer. What does it really mean to optimize
-			  "proactively"? Do you have a game plan to become one-to-one? Without
-			  best-of-breed C2C, you will lack compliance. What do we reinvent?
-			  Anything and everything, regardless of anonymity! Do you have a
-			  scheme to become compelling? What do we synergize? Anything and
-			  everything, regardless of abstruseness! Without e-services, you will
-			  lack web-readiness.
+        Growing up, I had a lot of negative feelings towards my body. But when I started weightlifting, I began to appreciate what my body was capable of instead of just how it looked. I learned to celebrate my strength and accomplishments instead of fixating on perceived flaws. Weightlifting helped me shift my focus from external validation to internal pride and self-worth, and it's been an empowering journey.
 			</p>
 		  </div>
 		  <div class="article">
-			<h2>Very compelling article</h2>
+			<h2>Nandana Sheri</h2>
+      <h3>Computer Science, 2nd-Year</h3>
 			<p>
-			  UIC has permanently altered the conceptualization of enterprise,
-			  collaborative accounting reports. The metrics for biometrics are
-			  more well-understood if they are not met. We apply the proverb "A
-			  rolling stone gathers no moss" not only to our development but our
-			  capability to expedite. We will exploit the ability of eyeballs to
-			  visualize. We understand that if you deliver virally then you may
-			  also reintermediate macro-intuitively. We will evolve the power of
-			  partnerships to engineer. What does it really mean to optimize
-			  "proactively"? Do you have a game plan to become one-to-one? Without
-			  best-of-breed C2C, you will lack compliance. What do we reinvent?
-			  Anything and everything, regardless of anonymity! Do you have a
-			  scheme to become compelling? What do we synergize? Anything and
-			  everything, regardless of abstruseness! Without e-services, you will
-			  lack web-readiness.
+        I never anticipated the social benefits of weightlifting when I first started. But as I became more involved in the lifting community, I realized how much of a support system it could be. I've made lifelong friends through lifting, and the camaraderie and shared sense of purpose has been invaluable. The gym is a place where I feel accepted and supported, and I'm grateful for the connections I've made through lifting.
 			</p>
 		  </div>
 		  <div class="article">
-			<h2>Very compelling article</h2>
+			<h2>Emma Rodriguez</h2>
+      <h3>Marketing, 3rd-Year</h3>
 			<p>
-			  UIC has permanently altered the conceptualization of enterprise,
-			  collaborative accounting reports. The metrics for biometrics are
-			  more well-understood if they are not met. We apply the proverb "A
-			  rolling stone gathers no moss" not only to our development but our
-			  capability to expedite. We will exploit the ability of eyeballs to
-			  visualize. We understand that if you deliver virally then you may
-			  also reintermediate macro-intuitively. We will evolve the power of
-			  partnerships to engineer. What does it really mean to optimize
-			  "proactively"? Do you have a game plan to become one-to-one? Without
-			  best-of-breed C2C, you will lack compliance. What do we reinvent?
-			  Anything and everything, regardless of anonymity! Do you have a
-			  scheme to become compelling? What do we synergize? Anything and
-			  everything, regardless of abstruseness! Without e-services, you will
-			  lack web-readiness.
+        As a woman in weightlifting, I have faced challenges. But with the support of my coaches and fellow lifters, I have been able to break down stereotypes and stigmas. I have learned that strength comes in all shapes and sizes, and that women can be just as powerful and capable as men in the gym.
 			</p>
 		  </div>
 		</div>
@@ -142,35 +58,31 @@
   
 		  <div class="sidebar" v-if="seen">
 			<div class="news">
-			  <h3>Some Random News</h3>
+			  <h2>Get involved!</h2>
+        <h3> Badminton Club</h3>
 			  <p>
-				Our feature set is unparalleled in the industry, but our
-				integrated content and user-proof use is frequently considered a
-				terrific achievement...
+          Our club holds practices twice a week to improve our badminton skills. We love to welcome new players and travel to many tournaments held at other universities for competitive badminton in both singles and doubles! Come meet us on Saturday April 8th at 11:30-1:30 pm.
 			  </p>
-			  <a href="https://www.wikipedia.org/" class="readmore"
+			  <a href="https://recreation.uic.edu/programs/sport-clubs/badminton-club/" class="readmore"
 				>Read More >>></a
 			  >
 			</div>
   
 			<div class="news">
-			  <h3>Wow Random News</h3>
+			  <h3>Self Defense Workshop</h3>
 			  <p>
-				We pride ourselves not only on our feature set, but our
-				newbie-proof administration and easy configuration.
-			  </p>
-			  <a href="https://www.wikipedia.org/" class="readmore"
+          UIC Protectives is a new martial arts training course on the campus of the University of Illinois at Chicago. More than self-defense, the course aims at training students to be a protector of themselves and others.</p>
+			  <a href="https://recreation.uic.edu/events/self-defense-workshop-2-2/" class="readmore"
 				>Read More >>></a
 			  >
 			</div>
   
 			<div class="news">
-			  <h3>Cool Random News</h3>
+			  <h3>UIC Counseling Center’s Mindbody Workshops</h3>
 			  <p>
-				We have come to know that it is better to transition extensibly
-				than to utilize wirelessly.
+          Group therapy is the treatment of choice for many concerns, especially for individuals whose distress is related to their social, family, or romantic relationships. Join us to explore personal concerns and connect with others, who may have similar experiences, in a trusting, confidential environment.
 			  </p>
-			  <a href="https://www.wikipedia.org/" class="readmore"
+			  <a href="https://counseling.uic.edu/group-3/#getting-started-with-a-group" class="readmore"
 				>Read More >>></a
 			  >
 			</div>
