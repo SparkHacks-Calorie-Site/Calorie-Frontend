@@ -3,50 +3,51 @@
 	  <div class="feed">
 		<div class="info">
 		  <h1>Student Testimonials</h1>
-		  <div class="article">
-			<h2>Samir Khan</h2>
+		  <div class="blogs">
+        
+			<h2 class = "name">Samir Khan</h2>
       <h3>Electrical Engineering, 1st-Year</h3>
 			<p>
 			  I've been powerlifting for over 10 years now and have competed in numerous local meets. I fell in love with the sport while in college and have been hooked ever since. I've spent countless hours perfecting my technique and building up my strength, and my best lift to date is a 400-pound squat. I love the sense of camaraderie among powerlifters and the feeling of pushing myself to new heights.
 			</p>
 		  </div>
-		  <div class="article">
-			<h2>Jayla Genisis</h2>
+		  <div class="blogs">
+			<h2 class = "name">Jayla Genisis</h2>
       <h3>Nursing, 3rd-Year</h3>
 			<p>
         After a serious injury, I turned to weightlifting to rebuild my strength and regain my confidence. Through hard work and the support of a strong community, I was able to overcome my injury and become stronger than ever before. Weightlifting not only helped me recover physically, but it also gave me a sense of purpose and drive that carried over into other areas of my life.
 			</p>
 		  </div>
-		  <div class="article">
-			<h2>Yara Alhasimi</h2>
+		  <div class="blogs">
+			<h2 class = "name">Yara Alhasimi</h2>
       <h3>Biology, 2nd-Year</h3>
 			<p>
         At first, weightlifting was intimidating. But with the encouragement of friends, I started lifting regularly and noticed a significant change in my body. Weightlifting also helped me to improve my mental health and become more confident in myself. Now, it's a regular part of my routine and has helped me become a better, stronger, and more confident version of myself.
 			</p>
 		  </div>
-		  <div class="article">
-			<h2>Mark Davis</h2>
+		  <div class="blogs">
+			<h2 class = "name">Mark Davis</h2>
       <h3>Business, 3rd-Year</h3>
 			<p>
 			  I've always been into fitness, but I only started powerlifting a few months ago. I was looking for a new challenge and thought powerlifting would be a great way to test my limits. I'm still working on building up my strength and perfecting my technique, but my best lift so far is a 185-pound deadlift. I love the feeling of pushing myself to new heights and can't wait to see where this sport takes me.
 			</p>
 		  </div>
-		  <div class="article">
-			<h2>Priya Patel</h2>
+		  <div class="blogs">
+			<h2 class = "name">Priya Patel</h2>
       <h3>Biomedical Engineering, 4th-Year</h3>
 			<p>
         Growing up, I had a lot of negative feelings towards my body. But when I started weightlifting, I began to appreciate what my body was capable of instead of just how it looked. I learned to celebrate my strength and accomplishments instead of fixating on perceived flaws. Weightlifting helped me shift my focus from external validation to internal pride and self-worth, and it's been an empowering journey.
 			</p>
 		  </div>
-		  <div class="article">
-			<h2>Nandana Sheri</h2>
+		  <div class="blogs">
+			<h2 class = "name">Nandana Sheri</h2>
       <h3>Computer Science, 2nd-Year</h3>
 			<p>
         I never anticipated the social benefits of weightlifting when I first started. But as I became more involved in the lifting community, I realized how much of a support system it could be. I've made lifelong friends through lifting, and the camaraderie and shared sense of purpose has been invaluable. The gym is a place where I feel accepted and supported, and I'm grateful for the connections I've made through lifting.
 			</p>
 		  </div>
-		  <div class="article">
-			<h2>Emma Rodriguez</h2>
+		  <div class="blogs">
+			<h2 class = "name">Emma Rodriguez</h2>
       <h3>Marketing, 3rd-Year</h3>
 			<p>
         As a woman in weightlifting, I have faced challenges. But with the support of my coaches and fellow lifters, I have been able to break down stereotypes and stigmas. I have learned that strength comes in all shapes and sizes, and that women can be just as powerful and capable as men in the gym.
@@ -125,10 +126,23 @@
   .info {
 	flex: 70%;
 	flex-grow: 1;
+  
   }
   
   /* /////////////////////////////////////////////////////////////// */
   /* Sidebar News */
+  .blogs {
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    border-style: solid;
+    border-radius: 10px;
+   border-color: white;
+   background-color: white;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.01)
+
+  }
+
   
   .articles {
 	flex: 25%;

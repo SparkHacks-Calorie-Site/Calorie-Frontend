@@ -20,8 +20,9 @@ nav a {
 }
 
 .logo {
-	height: 25px;
-	margin-bottom: 5px;
+	height: 50px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	vertical-align: middle;
 }
 

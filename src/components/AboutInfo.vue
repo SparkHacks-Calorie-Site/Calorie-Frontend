@@ -69,17 +69,17 @@
 		<div class="content">
 
 			<section class="info-col">
-				<div class="item-1 pfp">
+				<div class="pfp">
 					<img src="../assets/abdullah.jpg" />
 					<h2>Abdullah Ali</h2>
 					<!-- <p>Some writing someone will definitely read</p> -->
 				</div>
-				<div class="item-2 pfp">
+				<div class="pfp">
 					<img src="../assets/angad.jpg" />
 					<h2>Angad Gakhal</h2>
 					<!-- <p>Some writing someone will definitely read</p> -->
 				</div>
-				<div class="item-3 pfp">
+				<div class="pfp">
 					<img src="../assets/kevin.jpg" />
 					<h2>Kevin Cordero</h2>
 					<!-- <p>Some writing someone will definitely read</p> -->
@@ -88,12 +88,12 @@
 		</div>
 		<div class="content">
 			<section class="info-col">
-				<div class="item-1 pfp">
+				<div class="pfp">
 					<img src="../assets/salmas.jpg" />
 					<h2>Salma Mohamed</h2>
 					<!-- <p>Some writing someone will definitely read</p> -->
 				</div>
-				<div class="item-2 pfp">
+				<div class="pfp">
 					<img src="../assets/sarv.jpg" />
 					<h2>Sarvani Kunapareddy</h2>
 					<!-- <p>Some writing someone will definitely read</p> -->
